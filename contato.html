@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Larissa Cavalcante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="banner">
+    
+<!-----  Tamanho do banner superior da tela responsivo   --->    
+    <picture>
+        <source srcset="banner.grande.png" media="(min-width: 768px)">
+        <source srcset="banner.pequeno.png" media="(max-width: 767px)">
+        <img src="banner.grande.jpg" alt="banner Larissa Cavalcante web development">
+    </picture>
+
+<!-----  Menu de navegação   --->        
+    <nav>
+        <ul class="ul">
+            <li><a class="a" href="sobremim.html">Sobre Mim</a></li>
+            <li><a class="a" href="formacao.html">Formação</a></li>
+            <li><a class="a" href="portfolio.html">Portfólio</a></li>
+            <li><a class="a" href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section>
+        <h1 class="h1">Contato</h1>
+        <p>Entre em contato comigo!</p>
+        E-mail: lari.cavalcante@gmail.com<br>
+        Telefone: (41) 97531-xxxx<br>
+        <p>Mande uma mensagem no formulário abaixo:</p>
+
+<!-----  Formulário de contato  --->    
+        <form id= "form"action="" method="">
+            <p><label for="nome">Seu nome:</label><input type="text" name="nome" class="form"></p>
+            <p><label for="email">Seu e-mail:</label><input type="text" name="email" class="form"></p>
+            <p>Sua mensagem:</p>
+            <p><textarea for="mensagem" rows="15" cols="80"></textarea></p>
+
+<!-----  Botões com funções de envio e limpar formulário  --->    
+            <button for="enviar" id="enviar">Enviar</button>
+            <button for="limpar" id="limpar">Limpar</button>
+        </form>
+        <script src="script.js"></script>
+    </section>
+</main>
+<footer class="footer">
+    <p>© 2024 Larissa Cavalcante. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

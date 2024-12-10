@@ -1,0 +1,80 @@
+/*Configuração padrão da página */
+body {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #230329;
+    color: white;
+    margin: 0;
+}
+
+/*Configuração do banner superior */
+.banner {
+    max-width: 100%;
+    margin: auto;
+}
+
+/*Configuração menu */
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #000000;
+    width: 100%;
+    font-size: 26px;
+}
+
+/*Configuração link páginas menu */
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 20px;
+}
+
+a:link, a:visited {
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/*Responsividade do menu */
+@media (max-width: 768px) {
+    .ul {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .ul li {
+        margin: 10px 0;
+    }
+
+    a {
+        font-size: 18px;
+        padding: 10px;
+        display: block; 
+    }
+    
+}
+
+/*Configuração do footer da página */
+.footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 5px;
+}
+
+/*Configuração de imagem */
+.eu {
+    display: block;
+    margin: 0 auto;
+}
+
+/*Configuração do tamanho da caixa de texto do formulário */
+.form {
+    width: 40%;
+}
